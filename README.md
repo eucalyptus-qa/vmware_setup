@@ -1,3 +1,21 @@
+
+vmware_setup
+============
+
+## Description
+
+Setup VMware nodes -- contact V-Center if needed
+
+## Procedure
+
+1. Make sure $EUCALYPTUS is set
+2. Run through all vCenter-controlled hosts, add them to vCenter and configure VB to use them
+3. Run through all independent ESX hosts and configure VB to use them
+4. Inject XML configuration to CLC for VMware Broker using euca-modify-property
+5. Add eucalyptus conf configuration for NC service and NC port of VMwareBroker
+
+<hr><hr><hr>
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
